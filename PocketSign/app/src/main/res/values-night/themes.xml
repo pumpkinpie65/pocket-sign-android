@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PocketSign" parent="android:Theme.Material.NoActionBar">
+        <item name="android:colorPrimary">@color/pumpkin_filling_bright</item>
+        <item name="android:colorPrimaryDark">@color/crust_night</item>
+        <item name="android:colorAccent">@color/pumpkin_filling_bright</item>
+        <item name="android:statusBarColor">@color/crust_night</item>
+        <item name="android:navigationBarColor">@color/crust_night</item>
+        <item name="android:windowBackground">@color/crust_night</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

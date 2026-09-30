@@ -11,32 +11,72 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = PumpkinFillingBright,
+    onPrimary = OnPumpkinFillingDark,
+    primaryContainer = PumpkinFillingContainerDark,
+    onPrimaryContainer = PumpkinFillingContainer,
+    inversePrimary = PumpkinFilling,
+    secondary = CrustBright,
+    onSecondary = OnCrustDark,
+    secondaryContainer = CrustContainerDark,
+    onSecondaryContainer = CrustContainer,
+    tertiary = NutmegBright,
+    onTertiary = OnNutmegDark,
+    tertiaryContainer = NutmegContainerDark,
+    onTertiaryContainer = NutmegContainer,
+    background = CrustNight,
+    onBackground = OnCrustNight,
+    surface = CrustNight,
+    onSurface = OnCrustNight,
+    surfaceVariant = CrustNightVariant,
+    onSurfaceVariant = OnCrustNightMuted,
+    surfaceTint = PumpkinFillingBright,
+    inverseSurface = OnCrustNight,
+    inverseOnSurface = OnCream,
+    outline = OutlineDark,
+    outlineVariant = CrustNightVariant,
+    error = ErrorDark,
+    onError = OnErrorDark,
+    errorContainer = ErrorContainerDark,
+    onErrorContainer = OnErrorContainerDark,
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primary = PumpkinFilling,
+    onPrimary = OnPumpkinFilling,
+    primaryContainer = PumpkinFillingContainer,
+    onPrimaryContainer = OnPumpkinFillingDark,
+    inversePrimary = PumpkinFillingBright,
+    secondary = Crust,
+    onSecondary = OnCrust,
+    secondaryContainer = CrustContainer,
+    onSecondaryContainer = OnCrustDark,
+    tertiary = Nutmeg,
+    onTertiary = OnNutmeg,
+    tertiaryContainer = NutmegContainer,
+    onTertiaryContainer = OnNutmegDark,
+    background = Cream,
+    onBackground = OnCream,
+    surface = Cream,
+    onSurface = OnCream,
+    surfaceVariant = CreamMuted,
+    onSurfaceVariant = OnCreamMuted,
+    surfaceTint = PumpkinFilling,
+    inverseSurface = OnCream,
+    inverseOnSurface = OnCrustNight,
+    outline = OutlineLight,
+    outlineVariant = OutlineVariantLight,
+    error = ErrorLight,
+    onError = OnErrorLight,
+    errorContainer = ErrorContainerLight,
+    onErrorContainer = OnErrorContainerLight,
 )
 
 @Composable
 fun PocketSignTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    // Wallpaper-based Material You color; off so the pumpkin palette stays in control.
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
