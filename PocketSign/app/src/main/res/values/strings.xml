@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Pocket Sign</string>
+    <string name="display_dismiss_label">Fullscreen sign. Tap to go back.</string>
 </resources>

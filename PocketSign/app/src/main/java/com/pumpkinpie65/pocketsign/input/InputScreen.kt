@@ -32,7 +32,8 @@ fun InputScreen(
             value = text,
             onValueChange = onTextChange,
             label = { Text("Message") },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            minLines = 2,
         )
         Button(
             onClick = onShow,
