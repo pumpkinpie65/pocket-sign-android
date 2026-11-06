@@ -39,7 +39,6 @@ fun DisplayScreen(
         AutoSizeText(
             text = text,
             color = Color.White,
-            modifier = Modifier.fillMaxSize()
         )
     }
 }
